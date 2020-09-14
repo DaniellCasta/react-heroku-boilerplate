@@ -5,6 +5,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Contains
 
 Shows how to deploy to heroku properly, due to the lack of short information about.
+Base info:
+https://blog.heroku.com/deploying-react-with-zero-configuration
+
 
 ### How to:
 
@@ -27,7 +30,13 @@ npx create-react-app@3.x $APP_NAME
 3- Init your heroku settings and: 
 
 #### `heroku create <name> --buildpack mars/create-react-app` ¡OJO!
+
+Official way:
+
+`heroku create -b https://github.com/mars/create-react-app-buildpack.git`
+
  `git remote add heroku <urlgitheroku>`
+ 
  `git push heroku master`
 
 4- Do you have environment variables?
